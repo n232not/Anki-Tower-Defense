@@ -36,6 +36,8 @@ The game was designed around a fundamental active recall principle: **meaningful
   - **Speed Bonuses**: Answering quickly flips the timer gold and awards bonus coins (e.g. flips under 2s or 4s grant up to +3 bonus coins per card).
 - **Starting Coins**: Every time you launch Anki, your coin balance starts at **25 coins**—enough to place your first 1–2 starter towers immediately.
 
+![Recall Stopwatch with 7-Second Red Alert](screenshot_timer.png)
+
 ### Step 3: Placing Your First Defenses
 Before launching Wave 1, you are in the **Build Phase**:
 1. Look at the slime path on the board. Slimes enter from the entrance and follow the winding dirt track toward your base.
