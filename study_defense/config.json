@@ -1,0 +1,39 @@
+{
+  "points_per_card": 1,
+  "show_timer": true,
+  "timer_pos": null,
+  "speed_bonus": [
+    {
+      "under_seconds": 5,
+      "points": 2
+    },
+    {
+      "under_seconds": 10,
+      "points": 1
+    }
+  ],
+  "starting_points": 25,
+  "starting_lives": 100,
+  "start_wave_on_answer": true,
+  "wave_countdown_seconds": 0,
+  "show_tooltip_every": 10,
+  "toolbar_link": true,
+  "unlocks": {
+    "archer": 0,
+    "frost": 15,
+    "boomer": 30,
+    "cannon": 45,
+    "trapper": 70,
+    "sniper": 100,
+    "pyro": 130,
+    "tesla": 160,
+    "gust": 200,
+    "arcanist": 240,
+    "bard": 300,
+    "titan": 400
+  },
+  "cards_per_power": 15,
+  "wave_seconds": 300,
+  "wave_size": 3.0,
+  "dock_mode": true
+}

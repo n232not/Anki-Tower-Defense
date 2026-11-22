@@ -1,0 +1,83 @@
+<div id="td-app">
+  <div id="td-stage">
+    <!-- Non-intrusive top bar: lives, cash, focus meter, round, and split-screen dock toggle -->
+    <div id="td-topbar">
+      <div id="td-hud">
+        <div class="td-hud-item td-hud-lives" title="Lives"><span class="td-hud-ico td-ico-heart"></span><span id="td-lives" class="td-outline">100</span></div>
+        <div class="td-hud-item td-hud-cash" id="td-points-box" title="Study Points"><span class="td-hud-ico td-ico-coin"></span><span id="td-points" class="td-outline">0</span></div>
+      </div>
+      <div id="td-focus" class="td-hidden">
+        <div class="td-focus-lbl td-outline"><span id="td-focus-next"></span></div>
+        <div id="td-focus-bar"></div>
+      </div>
+      <div id="td-topbar-right">
+        <button id="td-pausebtn" class="td-btn td-gold td-dock-btn td-hidden" title="Pause / Resume wave (P)">⏸ Pause</button>
+        <div id="td-wavetimer" class="td-wavetimer td-hidden" title="Time remaining in this wave">
+          <span class="td-wavetimer-ico">⏳</span>
+          <span id="td-wavetime-val" class="td-outline">5:00</span>
+        </div>
+        <div id="td-round" title="Current Wave">
+          <span class="td-round-lbl td-outline">Round</span>
+          <span id="td-wave" class="td-outline">1</span>
+        </div>
+        <button id="td-dockbtn" class="td-btn td-blue td-dock-btn" title="Toggle Split Screen / Floating Window">&#x29C9;</button>
+      </div>
+    </div>
+
+    <div id="td-boardwrap">
+      <canvas id="td-bg" class="td-layer"></canvas>
+      <canvas id="td-board" width="960" height="600"></canvas>
+      <canvas id="td-fogc" class="td-layer"></canvas>
+
+      <div id="td-paused-overlay" class="td-paused-overlay td-hidden">
+        <div class="td-pause-card">
+          <div class="td-pause-title td-outline">⏸ WAVE PAUSED</div>
+          <div class="td-pause-sub">Answer any card in Anki or click Resume to continue</div>
+          <button id="td-resume-btn" class="td-btn td-green">▶ Resume</button>
+        </div>
+      </div>
+
+      <div id="td-overlay" class="td-hidden">
+        <div class="td-card">
+          <div class="td-ribbon"><h2 id="td-ov-title" class="td-outline"></h2></div>
+          <p id="td-ov-text"></p>
+          <button id="td-ov-btn" class="td-btn td-green"></button>
+        </div>
+      </div>
+      <div id="td-mapsel" class="td-hidden">
+        <div class="td-card td-mapcard">
+          <div class="td-ribbon td-ribbon-blue"><h2 class="td-outline">Choose a map</h2></div>
+          <div id="td-maplist"></div>
+          <button id="td-mapclose" class="td-btn td-red">Close</button>
+        </div>
+      </div>
+      <div id="td-toast"></div>
+    </div>
+  </div>
+
+  <aside id="td-side">
+    <div class="td-brand td-outline">Anki<br>Tower Defense</div>
+
+    <div class="td-stats">
+      <div><span class="td-lbl">Cards</span><b id="td-cards">0</b></div>
+      <div><span class="td-lbl">Best</span><b id="td-best">0</b></div>
+    </div>
+
+    <button id="td-mapbtn" class="td-btn td-purple" title="Change map (M)"><span class="td-lbl">Map</span><span id="td-mapname">Sunny Meadow</span></button>
+
+    <div id="td-mods"></div>
+    <div id="td-lockmsg" class="td-hidden"><b class="td-outline">Wave in progress</b>Keep reviewing! You can build when it ends.</div>
+
+    <div id="td-shop"></div>
+    <div id="td-unlock"></div>
+
+    <div id="td-info" class="td-hidden"></div>
+
+    <div class="td-controls">
+      <button id="td-speed" class="td-btn td-blue td-round-btn" title="Game speed"><span class="td-ff"></span><span id="td-speed-lbl" class="td-outline">1×</span></button>
+      <button id="td-start" class="td-btn td-green td-play" title="Start wave (Space)"><span class="td-tri"></span><span id="td-start-lbl" class="td-outline">Go</span></button>
+    </div>
+    <button id="td-dev" class="td-btn td-purple td-hidden">+10 cards (preview)</button>
+    <button id="td-reset" class="td-reset-link" title="Erase all game progress and start over">Reset progress&hellip;</button>
+  </aside>
+</div>
