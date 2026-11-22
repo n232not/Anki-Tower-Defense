@@ -6,19 +6,12 @@ An engaging, fast-paced Tower Defense minigame integrated seamlessly into Anki f
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 - **Study-Driven Economy & Powers**:
   - Earn study coins by reviewing flashcards. Fast recall grants speed bonus points!
   - Review streaks charge your elemental powers: **Frost Nova** (freezes all active enemies), **Meteor** (shreds slime armor and layers), **Lightning Storm** (strikes random targets across the board), and **Frenzy** (boosts tower attack rate).
 - **Draggable Card Reviewer Stopwatch**:
-  - A clean, non-intrusive recall timer embedded directly on your Anki review cards.
-  - Drag and place it anywhere on your card to avoid covering text. Double-click resets it to top-right. Position is remembered across sessions.
-  - Turns **vivid red at 7 seconds** with a subtle alert glow to keep your recall sharp and quick.
-- **Wave Pacing & Auto-Unpause**:
-  - Pause waves at any time using the top bar button, sidebar button, or `P` key.
-  - Answering a review card **automatically unpauses the wave**, keeping your study session flowing without manual toggling.
-  - Waves run on an intuitive 5-minute countdown clock.
 - **12 Unique Towers with Dual Upgrade Paths**:
   - **Archer**: Fast single-target arrows (Path A: Heavy Arrow/Crossbow/Sniper training; Path B: Quick Shot/Triple Shot/Volley).
   - **Frost**: Slows down marching slimes with chilling snow.
@@ -44,7 +37,7 @@ An engaging, fast-paced Tower Defense minigame integrated seamlessly into Anki f
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Method 1: Install from `.ankiaddon` File (Recommended)
 1. Download `anki_tower_defense.ankiaddon` from this repository.
@@ -63,7 +56,7 @@ An engaging, fast-paced Tower Defense minigame integrated seamlessly into Anki f
 
 ---
 
-## 🌐 Standalone Web Preview
+## Standalone Web Preview
 
 Want to play or test the game engine directly in your browser without launching Anki?
 Simply double-click or open [preview.html](preview.html) in any modern browser (Chrome, Safari, Firefox, Edge).
@@ -75,7 +68,7 @@ python3 -c "import sys; sys.path.insert(0, 'study_defense'); import page; html =
 
 ---
 
-## 🎮 Controls & Hotkeys
+## Controls & Hotkeys
 
 | Key / Action | Function |
 |---|---|
@@ -88,7 +81,7 @@ python3 -c "import sys; sys.path.insert(0, 'study_defense'); import page; html =
 
 ---
 
-## 🛠️ Testing & Development
+## Testing & Development
 
 The repository includes a complete headless simulation and validation harness in `tools/sim/`:
 
@@ -109,6 +102,6 @@ cd ..
 
 ---
 
-## 📄 License
+## License
 
 MIT License. Feel free to use, modify, and share!
