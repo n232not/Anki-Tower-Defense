@@ -616,7 +616,7 @@ TIMER_JS = """
       el.__dragging = false;
       el.style.cursor = 'grab';
       var s = (Date.now() - t0) / 1000;
-      if (s >= 7) {
+      if (s >= 5 && s < 10) {
         el.style.borderColor = 'rgba(255, 77, 79, 0.45)';
         el.style.boxShadow = '0 3px 12px rgba(255, 77, 79, 0.25)';
       } else {
@@ -680,7 +680,13 @@ TIMER_JS = """
     var s = (Date.now() - t0) / 1000, bonus = 0;
     for (var i = 0; i < tiers.length; i++) { if (s < tiers[i][0]) { bonus = tiers[i][1]; break; } }
     el.textContent = '\u23F1 ' + s.toFixed(1) + 's' + (bonus ? '  +' + bonus + ' bonus' : '');
-    if (s >= 7) {
+    if (s >= 10) {
+      el.style.color = '#9aa3b2';
+      if (!el.__dragging) {
+        el.style.borderColor = 'rgba(255, 255, 255, 0.18)';
+        el.style.boxShadow = '0 3px 10px rgba(0,0,0,0.35)';
+      }
+    } else if (s >= 5) {
       el.style.color = '#ff4d4f';
       if (!el.__dragging) {
         el.style.borderColor = 'rgba(255, 77, 79, 0.45)';

@@ -32,11 +32,11 @@ The game was designed around a fundamental active recall principle: **meaningful
 ### Step 2: The Study Economy & Reviewer Stopwatch
 - **The Draggable Stopwatch**: When reviewing cards, a clean timer badge appears on your card showing your recall elapsed time.
   - **Repositioning**: Click and drag the timer badge anywhere on your card so it never obscures card text. Double-clicking it resets it to the top-right corner.
-  - **The 7-Second Red Alert**: The timer turns **vivid red at 7.0 seconds** to give you a clear visual cue to keep your recall swift and punchy.
+  - **Color-Coded Recall Alert**: The timer turns **vivid red at 5.0 seconds** to keep your recall swift, and turns **grey at 10.0 seconds** once the speed bonus expires.
   - **Speed Bonuses**: Answering quickly flips the timer gold and awards bonus coins (e.g. flips under 2s or 4s grant up to +3 bonus coins per card).
 - **Starting Coins**: Every time you launch Anki, your coin balance starts at **25 coins**—enough to place your first 1–2 starter towers immediately.
 
-![Recall Stopwatch with 7-Second Red Alert](screenshot_timer.png)
+![Recall Stopwatch Alert](screenshot_timer.png)
 
 ### Step 3: Placing Your First Defenses
 Before launching Wave 1, you are in the **Build Phase**:
@@ -99,7 +99,7 @@ Click any placed tower during the build phase to inspect its stats and choose be
 - **Draggable Card Reviewer Stopwatch**:
   - A clean, non-intrusive recall timer embedded directly on your Anki review cards.
   - Drag and place it anywhere on your card so it never obscures card text. Double-click resets it to top-right. Position is remembered across sessions.
-  - Turns **vivid red at 7 seconds** with a subtle alert glow to keep your recall sharp and quick.
+  - Turns **vivid red at 5 seconds** with an alert glow and fades **grey at 10 seconds** when the speed bonus expires.
 - **Wave Pacing & Auto-Unpause**:
   - Pause waves at any time using the top bar button, sidebar button, or `P` key.
   - Answering a review card **automatically unpauses the wave**, keeping your study session flowing without manual toggling.
